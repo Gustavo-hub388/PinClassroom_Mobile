@@ -3,6 +3,7 @@ package com.example.pinclassroom;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -54,7 +55,13 @@ public class LoginActivity extends AppCompatActivity implements LoginInterface.V
     }
 
     public void IrRegistro(View view){
-        startActivity(new Intent(this,RegistroActivity.class));
+
+        Toast.makeText(this, "Te redireccionaremos a nuestra página web para que te registres",Toast.LENGTH_SHORT).show();
+
+        //Redireccionar a la página web de PinClassroom
+        Uri uri = Uri.parse("https://pinclassroomweb.firebaseapp.com");
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
     }
 
     @Override
