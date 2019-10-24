@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.pinclassroom.ui.inicio.InicioFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_inicio" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.pinclassroom.ui.aulas.AulasFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_aulas" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.pinclassroom.ui.docentes.DocentesFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_docentes" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.pinclassroom.ui.eventos.EventosFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_eventos" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.pinclassroom.ui.config.ConfigFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_config" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.pinclassroom.ui.logout.LogoutFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_logout" />
+</navigation>
