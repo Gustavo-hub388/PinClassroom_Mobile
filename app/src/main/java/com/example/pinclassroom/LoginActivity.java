@@ -59,9 +59,10 @@ public class LoginActivity extends AppCompatActivity implements LoginInterface.V
         Toast.makeText(this, "Te redireccionaremos a nuestra página web para que te registres",Toast.LENGTH_SHORT).show();
 
         //Redireccionar a la página web de PinClassroom
-        Uri uri = Uri.parse("https://pinclassroomweb.firebaseapp.com");
+        Uri uri = Uri.parse("https://pinclassroom-93711.web.app");
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
+
     }
 
     @Override
