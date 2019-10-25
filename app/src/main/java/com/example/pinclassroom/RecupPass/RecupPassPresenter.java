@@ -30,7 +30,6 @@ public class RecupPassPresenter implements RecupPassInterface.Presenter, RecupPa
         if (view!=null){
             view.enableInputs();
             view.hideProgress();
-            view.onError("Se ha enviado el correo para restablecer su contraseña");
             view.onLogin();
         }
     }

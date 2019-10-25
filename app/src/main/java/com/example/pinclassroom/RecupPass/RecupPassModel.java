@@ -30,6 +30,7 @@ public class RecupPassModel implements RecupPassInterface.Model{
                         listener.onError("No se puede restablecer su contraseña porque el correo "+ user.getEmail() +" aun no se a verificado aun.");
                     else {
                         listener.onSucess();
+                        listener.onError("Se ha enviado el correo para restablecer su contraseña");
                     }
                 }else{
                     listener.onError(task.getException().getMessage());
