@@ -21,10 +21,6 @@ public class AulasFragment extends Fragment {
 
     private AulasViewModel aulasViewModel;
 
-    private TabAulas aulas;
-
-    private PageAdapter tabs;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
